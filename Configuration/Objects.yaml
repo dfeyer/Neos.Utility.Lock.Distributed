@@ -1,0 +1,2 @@
+Neos\Utility\Lock\Distributed\Implementation\ImplementationInterface:
+  className: Neos\Utility\Lock\Distributed\Implementation\MemcacheImplementation

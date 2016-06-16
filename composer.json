@@ -1,0 +1,21 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "neos/utility-lock-distributed",
+    "require": {
+        "neos/utility-lock": "*"
+    },
+    "suggest": {
+        "predis/predis": "Required to use the PredisImplementation"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neos\\Utility\\Lock\\Distributed\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Neos.Utility.Lock.Distributed"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+Neos:
+  Utility:
+    Lock:
+      Distributed:
+
+        implementation:
+
+          'MemcacheImplementation':
+            host: 'localhost'
+            port: 11211
+            timeout: 1
+
+          'MemcachedImplementation':
+            servers:
+              -
+                host: 'localhost'
+                port: 11211
+                timeout: 1
+
+          'PHPRedisMutexImplementation':
+            servers:
+              -
+                host: 'localhost'
+                port: 6379
+                timeout: 1
+
+          'PredisImplementation':
+            servers:
+              -
+                parameters: 'redis://localhost'
+                options: []
