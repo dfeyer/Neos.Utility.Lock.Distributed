@@ -31,7 +31,6 @@ class MemcacheImplementation implements ImplementationInterface
      */
     public function synchronized($subject, \Callback $callback)
     {
-        \TYPO3\Flow\var_dump($subject);
         $memcache = new \Memcache();
         $memcache->connect($this->configuration['host'], $this->configuration['port'], $this->configuration['timeout']);
 
